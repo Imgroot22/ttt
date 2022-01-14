@@ -1,0 +1,5 @@
+#tic-tac-toe-board {
+  display: block;
+  margin: auto auto;
+  cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.wraper {
+  background-color: aqua;
+  margin: 0%;
+}
+.inner > h3 {
+  margin: 0%;
+}
+.btn-create {
+  width: 100%;
+  padding: 10px 0px;
+  cursor: pointer;
+  background-color: rgb(0, 255, 149);
+  border-style: none;
+  border-radius: 50px;
+}
+.btn-create:hover {
+  background-color: darkgreen;
+}
