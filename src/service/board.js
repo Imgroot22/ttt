@@ -42,6 +42,24 @@ class Board {
   isValidMove(x, y) {
     return this.#board[y][x] === defaultValue;
   }
+  generateRandomMove() {
+    let values = {
+      x: Math.floor(Math.random() * this.#size),
+      y: Math.floor(Math.random() * this.#size),
+    };
+    let count = 0;
+    while (
+      !this.isValidMove(values.x, values.y) &&
+      count++ < this.#size * this.#size
+    ) {
+      console.log(values);
+      values = {
+        x: Math.floor(Math.random() * this.#size),
+        y: Math.floor(Math.random() * this.#size),
+      };
+    }
+    return values;
+  }
 }
 
 export default Board;

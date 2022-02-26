@@ -99,15 +99,24 @@ class DrawService {
           if (this.player === 1) {
             this.drawX(xCordinate, yCordinate);
             this.board.MadeMove(1, x, y);
+            setTimeout(() => {
+              let computerMove = this.board.generateRandomMove();
+              this.board.MadeMove(2, computerMove.x, computerMove.y);
+              this.drawO(
+                computerMove.x * this.sectionSize,
+                computerMove.y * this.sectionSize
+              );
+            }, 1000);
           } else {
             this.drawO(xCordinate, yCordinate);
             this.board.MadeMove(2, x, y);
           }
-          if (this.player === 1) {
-            this.player = 2;
-          } else {
-            this.player = 1;
-          }
+
+          // if (this.player === 1) {
+          //   this.player = 2;
+          // } else {
+          //   this.player = 1;
+          // }
         }
       }
     }

@@ -5,12 +5,11 @@
   display: block;
   width: 95%;
 }
-.size {
-}
 .btn-create {
   font-size: 150%;
-  width: 100%;
+  width: 96%;
   padding: 10px 0px;
+  margin: 1% 2%;
   cursor: pointer;
   background-color: rgb(0, 255, 149);
   border-style: none;
@@ -22,8 +21,9 @@
 }
 .btn-close {
   font-size: 150%;
-  width: 100%;
+  width: 96%;
   padding: 10px 0px;
+  margin: 1% 2%;
   cursor: pointer;
   background-color: rgb(255, 60, 0);
   border-style: none;
